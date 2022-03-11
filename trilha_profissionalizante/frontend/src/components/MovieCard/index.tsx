@@ -1,15 +1,12 @@
 import MovieScore from "components/MovieScore";
 import { Link } from "react-router-dom";
+import { Movie } from "types/movie";
 
-function MovieCard() {
+type Props = {
+    movie: Movie;
+}
 
-    const movie = {
-        id: 1,
-        image: "https://www.themoviedb.org/t/p/w500_and_h282_face/ap40FS5o3rYKh7A7Q39sGgazLKy.jpg",
-        title: "Vikings",
-        count: 2,
-        score: 4.5
-    };
+function MovieCard( { movie } : Props)  {
 
     return (
         <div>
